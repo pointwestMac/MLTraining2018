@@ -13,3 +13,5 @@ def log_sse(Y, S):
     n = len(Y)
     error = (sum(Y*np.log(S)) + sum((1-Y)*np.log(1-S)))*(-1/n)
     return error
+
+print(log_sse(Y,S))
