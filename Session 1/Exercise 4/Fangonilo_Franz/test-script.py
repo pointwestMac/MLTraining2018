@@ -11,10 +11,11 @@ def abc(X, n_h):
     b1 = np.zeros((n_h,1))
     w2 = np.zeros(w1.shape)
     b2 = np.zeros((1,1))
-    return [w1, b1, w2, b2]
+    return w1, b1, w2, b2
 
+w1, b1, w2, b2 = abc(dataset, 2)
 
-print(abc(dataset, 3)[0].shape)
-print(abc(dataset, 3)[1].shape)
-print(abc(dataset, 3)[2].shape)
-print(abc(dataset, 3)[3].shape)
+print(w1.shape)
+print(b1.shape)
+print(w2.shape)
+print(b2.shape)
