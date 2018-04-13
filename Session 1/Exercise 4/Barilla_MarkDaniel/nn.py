@@ -19,12 +19,12 @@ def init_params(X, n_h):
                                             # to the first hidden layer with n_h neurons
                                             # Input layer will have as many neurons as columns in dataset.
 
-    b_1 = np.random.rand(n_h)               # Offset values of the n_h neurons in the first hidden layer.
+    b_1 = np.random.rand(n_h, 1)            # Offset values of the n_h neurons in the first hidden layer.
 
     W_2 = np.random.rand(n_h, 1)            # Weight matrix for the connecting the first hidden layer
                                             # to the output layer with 1 neuron.
 
-    b_2 = np.random.rand(1)                 # Offset value of the output neuron.
+    b_2 = np.random.rand(1, 1)              # Offset value of the output neuron.
     
     return W_1, b_1, W_2, b_2
 
